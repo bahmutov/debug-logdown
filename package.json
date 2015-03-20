@@ -1,6 +1,6 @@
 {
   "name": "debug-logdown",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "debug + logdown projects in one",
   "main": "index.js",
   "scripts": {

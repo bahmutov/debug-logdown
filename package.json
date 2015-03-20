@@ -4,7 +4,7 @@
   "description": "debug + logdown projects in one",
   "main": "index.js",
   "scripts": {
-    "test": "node test/test.js && DEBUG=worker node test/test.js"
+    "test": "node test/test.js && DEBUG=worker node test/test.js && DEBUG=test-log,worker node test/test.js"
   },
   "repository": {
     "type": "git",

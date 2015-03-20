@@ -4,7 +4,7 @@
   "description": "debug + logdown projects in one",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js && DEBUG=worker node test/test.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,9 @@
   "homepage": "https://github.com/bahmutov/debug-logdown",
   "dependencies": {
     "logdown": "1.0.8"
-  }
+  },
+  "devDependencies": {
+    "pre-git": "0.2.1"
+  },
+  "pre-commit": ["npm test", "npm version"]
 }

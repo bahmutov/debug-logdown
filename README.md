@@ -25,6 +25,15 @@ worker.error('worker.error');
 
 ![screenshot][screenshot]
 
+This works nicely with [quote](https://github.com/bahmutov/quote) to add bold / code style.
+
+```js
+var bold = require('quote')({ quotes: '*' });
+var code = require('quote')({ quotes: '`' });
+var worker = require('debug-logdown')('worker');
+worker.log('worker id ' + bold(id) + ' the code is ' + code('var code;'));
+```
+
 ### Small print
 
 Author: Gleb Bahmutov &copy; 2015

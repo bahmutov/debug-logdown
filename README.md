@@ -74,3 +74,5 @@ OTHER DEALINGS IN THE SOFTWARE.
 [debug-logdown-devdependencies-image]: https://david-dm.org/bahmutov/debug-logdown/dev-status.png
 [debug-logdown-devdependencies-url]: https://david-dm.org/bahmutov/debug-logdown#info=devDependencies
 [screenshot]: images/screenshot.png
+[debug]: https://www.npmjs.com/package/debug
+[logdown]: https://www.npmjs.com/package/logdown

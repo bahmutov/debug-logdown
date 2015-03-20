@@ -22,3 +22,5 @@ worker.log('worker.log can *be bold too*');
 worker.info('worker.info has\n`code samples\n\teven across lines\n\tlooking good`');
 worker.warn('worker.warn');
 worker.error('worker.error');
+
+worker.log('several', 'strings', 'separately');

@@ -23,4 +23,4 @@ worker.info('worker.info has\n`code samples\n\teven across lines\n\tlooking good
 worker.warn('worker.warn');
 worker.error('worker.error');
 
-worker.log('several', 'strings', 'separately');
+worker.log('this should print foo bar baz after colon:', '*foo*', '_bar_', '`baz`');

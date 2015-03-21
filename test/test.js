@@ -13,7 +13,7 @@
 var log = require('..')('test-log'),
   worker = require('..')('worker');
 
-log.log('log.log with *bold keywords*');
+log.log('log.log with', '*bold keywords*');
 log.info('log.info with **emphasis is also bold**');
 log.warn('log.warn about the `code samples`');
 log.error('log.error there is an *ERROR*');

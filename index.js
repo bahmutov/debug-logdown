@@ -4,15 +4,21 @@ module.exports = function (name) {
   if (!name || typeof name !== 'string') {
     throw new Error('expected a prefix name string');
   }
-  return new Logdown({ prefix: name });
+  return new Logdown({
+    prefix: name,
+    logAllErrors: true
+  });
 };
 
 Logdown.disable('*');
 
-var logNames = process.env.DEBUG;
-if (logNames) {
-  var names = logNames.split(',');
-  names.forEach(function (name) {
-    Logdown.enable(name);
-  });
+function enableSomeLoggers(logNames) {
+  if (logNames) {
+    var names = logNames.split(',');
+    names.forEach(function (name) {
+      Logdown.enable(name);
+    });
+  }
 }
+
+enableSomeLoggers(process.env.DEBUG);

@@ -1,6 +1,6 @@
 {
   "name": "debug-logdown",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "debug + logdown projects in one",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/bahmutov/debug-logdown",
   "dependencies": {
-    "logdown": "1.1.0"
+    "logdown": "git+https://github.com/bahmutov/logdown.git#9fb15efdefb6a2420e18739290e3f7e3e192ac67"
   },
   "devDependencies": {
     "pre-git": "0.2.1"

@@ -31,8 +31,13 @@ This works nicely with [quote](https://github.com/bahmutov/quote) to add bold / 
 var bold = require('quote')({ quotes: '*' });
 var code = require('quote')({ quotes: '`' });
 var worker = require('debug-logdown')('worker');
-worker.log('worker id ' + bold(id) + ' the code is ' + code('var code;'));
+worker.log('worker id', bold(id), 'the code is', code('var code;'));
 ```
+
+## Errors are always logged
+
+Standard log messages from a logger are skipped unless the logger is enabled. The `log.error` messages
+are *always* printed to simplify debugging.
 
 ### Small print
 
